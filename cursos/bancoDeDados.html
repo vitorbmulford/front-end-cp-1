@@ -1,34 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        background-color: rgb(65, 6, 119);
+        margin: 0; /* Adicionado para remover margens padrão do corpo */
+        padding: 0; /* Adicionado para remover padding padrão do corpo */
+      }
+      h1 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 8px;
+        color: rgb(84, 12, 179);
+        width: 100%;
+        height: 80px;
+        background-color: rgb(34, 34, 34);
+        line-height: 60px; /* Alinha verticalmente ao centro */
+      }
+      h2 {
+        margin-top: 0;
+        background-color: rgb(51, 51, 51);
+        text-align: center;
+        color: rgb(89, 12, 161);
+        width: 100%;
+      }
+      .texto {
+        padding-top: 50px;
+        margin-left: 300px;
+        margin-right: 300px;
+        height: 150px;
+        margin-bottom: 50px;
+        border-radius: 0px;
+        background: #2f005c;
+        box-shadow: 8px 8px 48px #2d0058, -8px -8px 48px #310060;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        margin-top: 30px;
+        width: 800px;
+        height: 500px;
+        margin-bottom: 50px;
+      }
+      .links {
+        margin-top: 50px;
+        border-radius: 64px;
+        background: #2f005c;
+        box-shadow: 8px 8px 48px #2d0058, -8px -8px 48px #310060;
+        text-align: center; /* Centraliza os links */
+      }
+      .links ul {
+        padding: 0; /* Remove o padding padrão da lista */
+      }
+      .links li {
+        display: inline; /* Coloca os itens da lista em linha */
+      }
+      .links li:not(:last-child) a {
+        /* Adicionado para evitar espaçamento extra no último link */
+        margin-right: 100px;
+      }
+      .links li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      }
+      .links li a:hover {
+        color: rgb(156, 28, 69);
+        text-decoration: underline;
+      }
+      .links li a:visited {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Banco de Dados</h1>
-<br>
-<img src="../img/banco-de-dados-como-servico-o-que-e-e-quais-os-beneficios-p10drsmzu8okc1cww9o3ypie6ymj3uxj7xqj7reqq0.jpg" alt="">
-
-<h2>O Curso</h2>
-<br>
-<p>Tecnologia em Banco de Dados prepara você para entender e utilizar melhor os dados, criando soluções inovadoras a 
-    partir de um fluxo de conteúdo monitorado e analisado.
-    E personalizando os serviços prestados por meio da construção de bases de dados para tomada de decisão e aplicação 
-    dos conceitos de BI (Business Intelligence) relacionados à modelagem de indicadores de desempenho, integração de 
-    dados corporativos e visualização das informações.
-    Aprenda ou aprofunde seus conhecimentos em aspectos técnicos, de infraestrutura e tuning, para desempenhar papel 
-    estratégico nas empresas e dar suporte à área de negócios, garantindo a segurança e integridade das informações das 
-    organizações.
-    Tudo isso por meio do uso de tecnologias como Big Data, Cloud Computing e Mobilidade.
-    Através do conceito de Big Data, organize as fontes de dados e utilize-as obtendo insights que embasem as 
-    corporações para a melhoria da operação do seu negócio.</p>
-<a href="ads.html">Cuso Anterior</a>
-<br>
-<a href="../index.html">Página Principal</a> 
-<br>
-<a href="../pagina.html">PROPAGANDA</a>
-<br>
-<a href="engComputacao.html">Próximo Curso</a>
-</body>
+    <h2>O Curso</h2>
+    <div class="container">
+      <img
+        src="../img/banco-de-dados-como-servico-o-que-e-e-quais-os-beneficios-p10drsmzu8okc1cww9o3ypie6ymj3uxj7xqj7reqq0.png"
+        alt=""
+      />
+    </div>
+    <div class="texto">
+      <p>
+        Tecnologia em Banco de Dados prepara você para entender e utilizar
+        melhor os dados, criando soluções inovadoras a partir de um fluxo de
+        conteúdo monitorado e analisado. E personalizando os serviços prestados
+        por meio da construção de bases de dados para tomada de decisão e
+        aplicação dos conceitos de BI (Business Intelligence) relacionados à
+        modelagem de indicadores de desempenho, integração de dados corporativos
+        e visualização das informações. Aprenda ou aprofunde seus conhecimentos
+        em aspectos técnicos, de infraestrutura e tuning, para desempenhar papel
+        estratégico nas empresas e dar suporte à área de negócios, garantindo a
+        segurança e integridade das informações das organizações. Tudo isso por
+        meio do uso de tecnologias como Big Data, Cloud Computing e Mobilidade.
+        Através do conceito de Big Data, organize as fontes de dados e
+        utilize-as obtendo insights que embasem as corporações para a melhoria
+        da operação do seu negócio.
+      </p>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="ads.html">Curso Anterior</a></li>
+        <li><a href="../index.html">Página Principal</a></li>
+        <li><a href="engComputacao.html">Próximo Curso</a></li>
+        <li><a href="../pagina.html">PROPAGANDA</a></li>
+      </ul>
+    </div>
+  </body>
 </html>

@@ -1,34 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        background-color: rgb(126, 145, 153);
+        margin: 0; /* Adicionado para remover margens padrão do corpo */
+        padding: 0; /* Adicionado para remover padding padrão do corpo */
+      }
+      h1 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 8px;
+        color: rgb(168, 212, 231);
+        width: 100%;
+        height: 80px;
+        background-color: rgb(34, 34, 34);
+        line-height: 60px; /* Alinha verticalmente ao centro */
+      }
+      h2 {
+        margin-top: 0;
+        background-color: rgb(51, 51, 51);
+        text-align: center;
+        color: rgb(145, 216, 247);
+        width: 100%;
+      }
+      .texto {
+        padding-top: 50px;
+        margin-left: 300px;
+        margin-right: 300px;
+        height: 150px;
+        margin-bottom: 50px;
+        border-radius: 0px;
+        background: #6b7a80;
+        box-shadow: 8px 8px 48px #586469, -8px -8px 48px #7e9097;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        margin-top: 30px;
+        width: 800px;
+        height: 500px;
+        margin-bottom: 50px;
+      }
+      .links {
+        margin-top: 50px;
+        border-radius: 64px;
+        background: #6b7a80;
+        box-shadow: 8px 8px 48px #586469, -8px -8px 48px #7e9097;
+        text-align: center; /* Centraliza os links */
+      }
+      .links ul {
+        padding: 0; /* Remove o padding padrão da lista */
+      }
+      .links li {
+        display: inline; /* Coloca os itens da lista em linha */
+      }
+      .links li:not(:last-child) a {
+        /* Adicionado para evitar espaçamento extra no último link */
+        margin-right: 100px;
+      }
+      .links li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      }
+      .links li a:hover {
+        color: rgb(156, 28, 69);
+        text-decoration: underline;
+      }
+      .links li a:visited {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Jogos Digitais</h1>
-<br>
-<img src="../img/jogos_digitais.webp" alt="">
-
-<h2>O Curso</h2>
-<br>
-<p>Você vai ser preparado para desenvolver jogos em todas as plataformas: internet, consoles (Playstation, Xbox e 
-    Nintendo), smartphones (aplicativos para celulares e tablets), desktops (PC e Mac), TV digital, simuladores de realidade 
-    virtual e virtualizações (totem tour virtual).
-    Você vai aprender a idealizar e desenvolver um jogo desde o enredo, passando pela criação de personagens, conceitos 
-    de gameficação, ambientes e objetos de cenários.
-    A grade contempla conhecimentos de ilustração, programação, inteligência artificial, modelagem 2D e 3D, design, 
-    testes, implantação e gestão.
-    Todas as aulas são ministradas em laboratório (inclusive laboratório Apple) com a suíte da Autodesk, utilizada em 
-    Hollywood, o Maya, além das ferramentas líderes do mercado como Photoshop e Unity3D.
-    Os professores do curso são especialistas de mercado, com experiência acadêmica, atuantes na área e proprietários 
-    de empresas que desenvolvem jogos.</p>
-<a href="gestaoTecnInformacao.html">Cuso Anterior</a>
-<br>
-<a href="../index.html">Página Principal</a> 
-<br>
-<a href="../pagina.html">PROPAGANDA</a>
-<br>
-<a href="redeComputadores.html">Próximo Curso</a>
-</body>
+    <h2>O Curso</h2>
+    <div class="container">
+      <img src="../img/jogos_digitais.jpg" alt="" />
+    </div>
+    <div class="texto">
+      <p>
+        Você vai ser preparado para desenvolver jogos em todas as plataformas:
+        internet, consoles (Playstation, Xbox e Nintendo), smartphones
+        (aplicativos para celulares e tablets), desktops (PC e Mac), TV digital,
+        simuladores de realidade virtual e virtualizações (totem tour virtual).
+        Você vai aprender a idealizar e desenvolver um jogo desde o enredo,
+        passando pela criação de personagens, conceitos de gameficação,
+        ambientes e objetos de cenários. A grade contempla conhecimentos de
+        ilustração, programação, inteligência artificial, modelagem 2D e 3D,
+        design, testes, implantação e gestão. Todas as aulas são ministradas em
+        laboratório (inclusive laboratório Apple) com a suíte da Autodesk,
+        utilizada em Hollywood, o Maya, além das ferramentas líderes do mercado
+        como Photoshop e Unity3D. Os professores do curso são especialistas de
+        mercado, com experiência acadêmica, atuantes na área e proprietários de
+        empresas que desenvolvem jogos.
+      </p>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="gestaoTecnInformacao.html">Curso Anterior</a></li>
+        <li><a href="../index.html">Página Principal</a></li>
+        <li><a href="redeComputadores.html">Próximo Curso</a></li>
+        <li><a href="../pagina.html">PROPAGANDA</a></li>
+      </ul>
+    </div>
+  </body>
 </html>

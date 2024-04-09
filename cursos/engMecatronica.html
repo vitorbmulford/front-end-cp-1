@@ -1,33 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        background-color: rgb(189, 106, 29);
+        margin: 0; /* Adicionado para remover margens padrão do corpo */
+        padding: 0; /* Adicionado para remover padding padrão do corpo */
+      }
+      h1 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 8px;
+        color: rgb(179, 65, 12);
+        width: 100%;
+        height: 80px;
+        background-color: rgb(34, 34, 34);
+        line-height: 60px; /* Alinha verticalmente ao centro */
+      }
+      h2 {
+        margin-top: 0;
+        background-color: rgb(51, 51, 51);
+        text-align: center;
+        color: rgb(192, 107, 27);
+        width: 100%;
+      }
+      .texto {
+        padding-top: 50px;
+        margin-left: 300px;
+        margin-right: 300px;
+        height: 150px;
+        margin-bottom: 50px;
+        border-radius: 0px;
+        background: #8e4d10;
+        box-shadow: 8px 8px 48px #884a0f, -8px -8px 48px #945011;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        margin-top: 30px;
+        width: 800px;
+        height: 500px;
+        margin-bottom: 50px;
+      }
+      .links {
+        margin-top: 50px;
+        border-radius: 64px;
+        background: #8e4d10;
+        box-shadow: 8px 8px 48px #884a0f, -8px -8px 48px #945011;
+        text-align: center; /* Centraliza os links */
+      }
+      .links ul {
+        padding: 0; /* Remove o padding padrão da lista */
+      }
+      .links li {
+        display: inline; /* Coloca os itens da lista em linha */
+      }
+      .links li:not(:last-child) a {
+        /* Adicionado para evitar espaçamento extra no último link */
+        margin-right: 100px;
+      }
+      .links li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      }
+      .links li a:hover {
+        color: rgb(156, 28, 69);
+        text-decoration: underline;
+      }
+      .links li a:visited {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Engenharia Mecatrônica</h1>
-<br>
-<img src="../img/engenharia_mecatronica.webp" alt="">
-
-<h2>O Curso</h2>
-<br>
-<p>É uma das profissões mais promissoras do mercado, tanto em época de crise como em momentos positivos da 
-    economia. Para ganhar competitividade, toda empresa precisa desenvolver e implantar sistemas automatizados, 
-    utilizando tecnologias exponenciais. Por isso, a Mecatrônica surge como uma área emergente da Engenharia que ajuda 
-    a encontrar soluções originais, integrando Engenharia Elétrica, Engenharia Mecânica, Ciência da Computação, 
-    Engenharia de Controle e Tecnologia da Informação.
-    Nosso curso proporciona a investigação, concepção e implementação de produtos e processos inteligentes e inéditos 
-    dentro da Engenharia. Com o objetivo de solucionar problemas reais, você vai criar e realizar um projeto “hands on” 
-    por ano, utilizando tecnologias disruptivas como: Inteligência Artificial, Robótica, Sensores, Design, Sistemas 
-    Embarcados e Energias Alternativas. Transformar as empresas, aliando empreendedorismo, criatividade e design 
-    thinking. Este é o Engenheiro Mecatrônico que a FIAP quer formar.</p>
-<a href="engComputacao.html">Cuso Anterior</a>
-<br>
-<a href="../index.html">Página Principal</a> 
-<br>
-<a href="../pagina.html">PROPAGANDA</a>
-<br>
-<a href="engProducao.html">Próximo Curso</a>
-</body>
+    <h2>O Curso</h2>
+    <div class="container">
+      <img src="../img/engenharia_mecatronica.webp" alt="" />
+    </div>
+    <div class="texto">
+      <p>
+        É uma das profissões mais promissoras do mercado, tanto em época de
+        crise como em momentos positivos da economia. Para ganhar
+        competitividade, toda empresa precisa desenvolver e implantar sistemas
+        automatizados, utilizando tecnologias exponenciais. Por isso, a
+        Mecatrônica surge como uma área emergente da Engenharia que ajuda a
+        encontrar soluções originais, integrando Engenharia Elétrica, Engenharia
+        Mecânica, Ciência da Computação, Engenharia de Controle e Tecnologia da
+        Informação. Nosso curso proporciona a investigação, concepção e
+        implementação de produtos e processos inteligentes e inéditos dentro da
+        Engenharia. Com o objetivo de solucionar problemas reais, você vai criar
+        e realizar um projeto “hands on” por ano, utilizando tecnologias
+        disruptivas como: Inteligência Artificial, Robótica, Sensores, Design,
+        Sistemas Embarcados e Energias Alternativas. Transformar as empresas,
+        aliando empreendedorismo, criatividade e design thinking. Este é o
+        Engenheiro Mecatrônico que a FIAP quer formar.
+      </p>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="engComputacao.html">Curso Anterior</a></li>
+        <li><a href="../index.html">Página Principal</a></li>
+        <li><a href="engProducao.html">Próximo Curso</a></li>
+        <li><a href="../pagina.html">PROPAGANDA</a></li>
+      </ul>
+    </div>
+  </body>
 </html>

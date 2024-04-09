@@ -1,0 +1,102 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ccc; /* Alterei a cor de fundo para cinza claro */
+}
+
+/* Navbar */
+header nav {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav .fiap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav .fiap h1 {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+header nav .fiap .logo img {
+  width: 80px;
+  height: auto;
+}
+
+/* Conhecendo os Cursos */
+main .cursos {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+main .cursos .conhecendo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+main .cursos .links {
+  list-style: none;
+}
+
+main .cursos .links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+main .cursos .links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main .cursos .links li a:hover {
+  text-decoration: underline;
+}
+
+/* Box de texto */
+main .boxp {
+  border-radius: 0px;
+  background: #f2f2f2;
+  box-shadow: 6px 6px 12px #c6c6c6, -6px -6px 12px #ffffff;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px auto;
+  width: 70%;
+  height: 500px;
+  padding: 200px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  header nav .fiap h1 {
+    font-size: 20px;
+  }
+  header nav .fiap .logo img {
+    width: 60px;
+  }
+  main .cursos .conhecendo {
+    font-size: 20px;
+  }
+  main .boxp {
+    font-size: 16px;
+  }
+}

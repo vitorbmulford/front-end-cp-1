@@ -1,51 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meus sites favoritos</title>
-</head>
-<body>
-    
-    <a href="https://www.wikipedia.org" target="_blank">
-        <img src="img_pagina/wikipedia_logo.png.png" alt="Wikipedia">
-    </a>
-    
-    <a href="https://www.youtube.com" target="_blank">
-        <img src="img_pagina/youtube_logo.png.png" alt="YouTube">
-    </a>
-    
-    <a href="https://www.netflix.com" target="_blank">
-        <img src="img_pagina/netflix_logo.png.png" alt="Netflix">
-    </a>
-    
-    <a href="https://www.github.com" target="_blank">
-        <img src="img_pagina/github_logo.png.png" alt="GitHub">
-    </a>
-    
-    <a href="https://www.stackoverflow.com" target="_blank">
-        <img src="img_pagina/stackoverflow_logo.png.png" alt="Stack Overflow">
-    </a>
-    
-    <a href="https://www.spotify.com" target="_blank">
-        <img src="img_pagina/spotify_logo.png.png" alt="Spotify">
-    </a>
-    
-    <a href="https://www.medium.com" target="_blank">
-        <img src="img_pagina/medium_logo.png.png" alt="Medium">
-    </a>
-    
-    <a href="https://www.amazon.com" target="_blank">
-        <img src="img_pagina/amazon_logo.png.png" alt="Amazon">
-    </a>
-    
-    <a href="https://www.udemy.com" target="_blank">
-        <img src="img_pagina/udemy_logo.png.png" alt="Udemy">
-    </a>
-    
-    <a href="https://www.instagram.com" target="_blank">
-        <img src="img_pagina/instagram_logo.png.webp" alt="Instagram">
-    </a>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
-</body>
+      .container a {
+        margin: 50px;
+      }
+
+      .container img {
+        width: 200px;
+        height: 200px;
+      }
+      .links {
+        color: #000;
+        margin-top: 50px;
+        
+        text-align: center; /* Centraliza os links */
+      }
+      .links ul {
+        padding: 0; /* Remove o padding padrão da lista */
+      }
+      .links li {
+        display: inline; /* Coloca os itens da lista em linha */
+      }
+      .links li:not(:last-child) a {
+        /* Adicionado para evitar espaçamento extra no último link */
+        margin-right: 100px;
+      }
+      .links li a {
+        text-decoration: none;
+      }
+      .links li a:hover {
+        color: rgb(156, 28, 69);
+        text-decoration: underline;
+      }
+      .links li a:visited {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+      .links p{
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="https://www.wikipedia.org" target="_blank">
+        <img src="img_pagina/wikipedia_logo.png.png" alt="Wikipedia" />
+      </a>
+
+      <a href="https://www.youtube.com" target="_blank">
+        <img src="img_pagina/youtube_logo.png.png" alt="YouTube" />
+      </a>
+
+      <a href="https://www.netflix.com" target="_blank">
+        <img src="img_pagina/netflix_logo.png.png" alt="Netflix" />
+      </a>
+
+      <a href="https://www.github.com" target="_blank">
+        <img src="img_pagina/github_logo.png.png" alt="GitHub" />
+      </a>
+
+      <a href="https://www.stackoverflow.com" target="_blank">
+        <img src="img_pagina/stackoverflow_logo.png.png" alt="Stack Overflow" />
+      </a>
+
+      <a href="https://www.spotify.com" target="_blank">
+        <img src="img_pagina/spotify_logo.png.png" alt="Spotify" />
+      </a>
+
+      <a href="https://www.medium.com" target="_blank">
+        <img src="img_pagina/medium_logo.png.png" alt="Medium" />
+      </a>
+
+      <a href="https://www.amazon.com" target="_blank">
+        <img src="img_pagina/amazon_logo.png.png" alt="Amazon" />
+      </a>
+
+      <a href="https://www.udemy.com" target="_blank">
+        <img src="img_pagina/udemy_logo.png.png" alt="Udemy" />
+      </a>
+
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="img_pagina/instagram_logo.png.webp" alt="Instagram" />
+      </a>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="pagina.html"><p>Voltar Pagina Principal</p></a></li>
+      </ul>
+    </div>
+  </body>
 </html>

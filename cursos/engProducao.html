@@ -1,30 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        background-color: rgb(236, 248, 126);
+        margin: 0; /* Adicionado para remover margens padrão do corpo */
+        padding: 0; /* Adicionado para remover padding padrão do corpo */
+      }
+      h1 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 8px;
+        color: #c5ce77;
+        width: 100%;
+        height: 80px;
+        background-color: rgb(34, 34, 34);
+        line-height: 60px; /* Alinha verticalmente ao centro */
+      }
+      h2 {
+        margin-top: 0;
+        background-color: rgb(51, 51, 51);
+        text-align: center;
+        color: #848b3c;
+        width: 100%;
+      }
+      .texto {
+        padding-top: 50px;
+        margin-left: 300px;
+        margin-right: 300px;
+        height: 150px;
+        margin-bottom: 50px;
+        border-radius: 0px;
+        background: #a9b15d;
+        box-shadow: 8px 8px 48px #8b914c, -8px -8px 48px #c7d16e;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        margin-top: 30px;
+        width: 800px;
+        height: 500px;
+        margin-bottom: 50px;
+      }
+      .links {
+        margin-top: 50px;
+        border-radius: 64px;
+        background: #a9b15d;
+        box-shadow: 8px 8px 48px #8b914c, -8px -8px 48px #c7d16e;
+        text-align: center; /* Centraliza os links */
+      }
+      .links ul {
+        padding: 0; /* Remove o padding padrão da lista */
+      }
+      .links li {
+        display: inline; /* Coloca os itens da lista em linha */
+      }
+      .links li:not(:last-child) a {
+        /* Adicionado para evitar espaçamento extra no último link */
+        margin-right: 100px;
+      }
+      .links li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      }
+      .links li a:hover {
+        color: rgb(156, 28, 69);
+        text-decoration: underline;
+      }
+      .links li a:visited {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Engenharia da Produção</h1>
-<br>
-<img src="../img/eng_produca.jpg" alt="">
-
-<h2>O Curso</h2>
-<br>
-<p>O ENGENHEIRO DE PRODUÇÃO reúne conhecimentos das áreas de administração, economia e engenharia. O curso 
-    foi planejado para incorporar a influência de ferramentas tecnológicas, indispensáveis para gestão de negócios.
-    A grade privilegia conhecimentos avançados na área de exatas (matemática, ciência e tecnologia) e à formação em 
-    aspectos políticos, sociais, ambientais, culturais e de sustentabilidade.
-    Na FIAP, o futuro engenheiro dispõe de um parque tecnológico avançado, laboratórios de química, informática, 
-    fabricação e o Maker Labs, onde você pode ir da ideia ao protótipo, unindo práticas multidisciplinares de mecânica, 
-    eletrônica e tecnologia, com impressoras 3D, usinagem, cortadoras laser e fresadoras de precisão.</p>
-<a href="engComputacao.html">Cuso Anterior</a>
-<br>
-<a href="../index.html">Página Principal</a> 
-<br>
-<a href="../pagina.html">PROPAGANDA</a>
-<br>
-<a href="gestaoTecnInformacao.html">Próximo Curso</a>
-</body>
+    <h2>O Curso</h2>
+    <div class="container">
+      <img src="../img/eng_produca.jpg" alt="" />
+    </div>
+    <div class="texto">
+      <p>
+        O ENGENHEIRO DE PRODUÇÃO reúne conhecimentos das áreas de administração,
+        economia e engenharia. O curso foi planejado para incorporar a
+        influência de ferramentas tecnológicas, indispensáveis para gestão de
+        negócios. A grade privilegia conhecimentos avançados na área de exatas
+        (matemática, ciência e tecnologia) e à formação em aspectos políticos,
+        sociais, ambientais, culturais e de sustentabilidade. Na FIAP, o futuro
+        engenheiro dispõe de um parque tecnológico avançado, laboratórios de
+        química, informática, fabricação e o Maker Labs, onde você pode ir da
+        ideia ao protótipo, unindo práticas multidisciplinares de mecânica,
+        eletrônica e tecnologia, com impressoras 3D, usinagem, cortadoras laser
+        e fresadoras de precisão.
+      </p>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="engMecatronica.html">Curso Anterior</a></li>
+        <li><a href="../index.html">Página Principal</a></li>
+        <li><a href="gestaoTecnInformacao.html">Próximo Curso</a></li>
+        <li><a href="../pagina.html">PROPAGANDA</a></li>
+      </ul>
+    </div>
+  </body>
 </html>

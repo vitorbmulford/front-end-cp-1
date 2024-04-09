@@ -1,33 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Engenharia da Computação</h1>
-<br>
-<img src="../img/eng_computacao.jpg" alt="">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        background-color: rgb(4, 87, 87);
+        margin: 0; /* Adicionado para remover margens padrão do corpo */
+        padding: 0; /* Adicionado para remover padding padrão do corpo */
+      }
+      h1 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 8px;
+        color: rgb(1, 124, 108);
+        width: 100%;
+        height: 80px;
+        background-color: rgb(34, 34, 34);
+        line-height: 60px; /* Alinha verticalmente ao centro */
+      }
+      h2 {
+        margin-top: 0;
+        background-color: rgb(51, 51, 51);
+        text-align: center;
+        color: rgb(6, 121, 111);
+        width: 100%;
+      }
+      .texto {
+        padding-top: 50px;
+        margin-left: 300px;
+        margin-right: 300px;
+        height: 150px;
+        margin-bottom: 50px;
+        border-radius: 0px;
+        background: #033f3f;
+        box-shadow: 8px 8px 48px #033c3c, -8px -8px 48px #034242;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        margin-top: 30px;
+        width: 600px;
+        height: 500px;
+        margin-bottom: 50px;
+      }
+      .links {
+        margin-top: 50px;
+        border-radius: 64px;
+        background: #033f3f;
+        box-shadow: 8px 8px 48px #033c3c, -8px -8px 48px #034242;
+        text-align: center; /* Centraliza os links */
+      }
 
-<h2>O Curso</h2>
-<br>
-<p>O ENGENHEIRO DA COMPUTAÇÃO desenvolve projetos nas áreas de sistemas operacionais, arquitetura de 
-    computadores, redes, robótica e inteligência artificial.
-    A grade privilegia conhecimentos avançados na área de exatas (física e matemática) e aspectos de eletrônica, controle 
-    e automação, telecomunicações e TI.
-    Você aprende sobre o ciclo de fabricação (custos, prazos, riscos, qualidade), gerenciamento de equipe, 
-    desenvolvimento de aplicativos, linguagens de programação e empreendedorismo.
-    Na FIAP, o futuro engenheiro dispõe de um parque tecnológico avançado, laboratórios de química, informática, 
-    fabricação e o ‘Maker Labs’, um dos laboratórios mais modernos de engenharia do Brasil, com impressoras 3D, 
-    usinagem, cortadoras laser e fresadoras de precisão para criação de protótipos e peças em automação simples e com 
-    CNC (Computer Numeric Control).</p>
-<a href="bancoDeDados.html">Cuso Anterior</a>
-<br>
-<a href="../index.html">Página Principal</a> 
-<br>
-<a href="../pagina.html">PROPAGANDA</a>
-<br>
-<a href="engMecatronica.html">Próximo Curso</a>
-</body>
+      .links ul {
+        padding: 0; /* Remove o padding padrão da lista */
+      }
+      .links li {
+        display: inline; /* Coloca os itens da lista em linha */
+      }
+      .links li:not(:last-child) a {
+        /* Adicionado para evitar espaçamento extra no último link */
+        margin-right: 100px;
+      }
+      .links li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      }
+      .links li a:hover {
+        color: rgb(156, 28, 69);
+        text-decoration: underline;
+      }
+      .links li a:visited {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Engenharia da Computação</h1>
+    <h2>O Curso</h2>
+    <div class="container">
+      <img src="../img/eng_computacao.jpg" alt="" />
+    </div>
+    <div class="texto">
+      <p>
+        O ENGENHEIRO DA COMPUTAÇÃO desenvolve projetos nas áreas de sistemas
+        operacionais, arquitetura de computadores, redes, robótica e
+        inteligência artificial. A grade privilegia conhecimentos avançados na
+        área de exatas (física e matemática) e aspectos de eletrônica, controle
+        e automação, telecomunicações e TI. Você aprende sobre o ciclo de
+        fabricação (custos, prazos, riscos, qualidade), gerenciamento de equipe,
+        desenvolvimento de aplicativos, linguagens de programação e
+        empreendedorismo. Na FIAP, o futuro engenheiro dispõe de um parque
+        tecnológico avançado, laboratórios de química, informática, fabricação e
+        o ‘Maker Labs’, um dos laboratórios mais modernos de engenharia do
+        Brasil, com impressoras 3D, usinagem, cortadoras laser e fresadoras de
+        precisão para criação de protótipos e peças em automação simples e com
+        CNC (Computer Numeric Control).
+      </p>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="bancoDeDados.html">Curso Anterior</a></li>
+        <li><a href="../index.html">Página Principal</a></li>
+        <li><a href="engMecatronica.html">Próximo Curso</a></li>
+        <li><a href="../pagina.html">PROPAGANDA</a></li>
+      </ul>
+    </div>
+  </body>
 </html>
