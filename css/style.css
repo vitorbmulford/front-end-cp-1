@@ -52,11 +52,14 @@ main .cursos .conhecendo {
 }
 
 main .cursos .links {
-  list-style: none;
+  list-style: none; /* Removendo as bolinhas */
+  margin: 0;
+  padding: 0;
 }
 
-main .cursos .links li {
-  display: inline;
+main .cursos .links div {
+  list-style: none;
+  display: inline-block;
   margin: 0 10px;
 }
 
@@ -83,6 +86,42 @@ main .boxp {
   width: 70%;
   height: 500px;
   padding: 200px;
+}
+.cursos .links .adm a {
+  color: rgb(139, 190, 238);
+}
+.cursos .links .ads a {
+  color: rgb(5, 49, 131);
+}
+.cursos .links .bancoDeDados a {
+  color: rgb(65, 6, 119);
+}
+.cursos .links .engComputacao a {
+  color: rgb(4, 87, 87);
+}
+.cursos .links .engProducao a {
+  color: rgb(236, 248, 126);
+}
+.cursos .links .engMecatronica a {
+  color: rgb(189, 106, 29);
+}
+.cursos .links .gestaoTec a {
+  color: rgb(175, 131, 245);
+}
+.cursos .links .jogos a {
+  color: rgb(126, 145, 153);
+}
+.cursos .links .rede a {
+  color: rgb(109, 201, 144);
+}
+.cursos .links .si a {
+  color: rgb(134, 169, 192);
+}
+.cursos .links .sistema a {
+  color: rgb(196, 174, 77);
+}
+.cursos .links .propraganda a {
+  color: rgb(253, 253, 251);
 }
 
 /* Responsividade */
