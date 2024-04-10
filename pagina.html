@@ -4,52 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meus sites favoritos</title>
-    <style>
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .container a {
-        margin: 50px;
-      }
-
-      .container img {
-        width: 200px;
-        height: 200px;
-      }
-      .links {
-        color: #000;
-        margin-top: 50px;
-        
-        text-align: center; /* Centraliza os links */
-      }
-      .links ul {
-        padding: 0; /* Remove o padding padrão da lista */
-      }
-      .links li {
-        display: inline; /* Coloca os itens da lista em linha */
-      }
-      .links li:not(:last-child) a {
-        /* Adicionado para evitar espaçamento extra no último link */
-        margin-right: 100px;
-      }
-      .links li a {
-        text-decoration: none;
-      }
-      .links li a:hover {
-        color: rgb(156, 28, 69);
-        text-decoration: underline;
-      }
-      .links li a:visited {
-        color: rgb(255, 255, 255);
-        text-decoration: underline;
-      }
-      .links p{
-        color: #000;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style_favoritos.css" />
   </head>
   <body>
     <div class="container">
@@ -95,7 +50,9 @@
     </div>
     <div class="links">
       <ul>
-        <li><a href="pagina.html"><p>Voltar Pagina Principal</p></a></li>
+        <li>
+          <a href="index.html"><p>Voltar Pagina Principal</p></a>
+        </li>
       </ul>
     </div>
   </body>
